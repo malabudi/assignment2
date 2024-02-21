@@ -6,11 +6,13 @@ const PORT = 3000;
 // To see the code of each route, check the routes folder
 const tweetsRoute = require('./routes/Tweets');
 const linksRoute = require('./routes/Links');
-const tweetsRoute = require('./routes/Tweet');
+const tweetDetailsRoute = require('./routes/TweetDetails');
+const profileRoute = require('./routes/Profiles');
 
-app.use('/tweets', tweetsRoute)
-app.use('/links', linksRoute)
-app.use('/tweet', linksRoute)
+app.use('/tweets', tweetsRoute);
+app.use('/links', linksRoute);
+app.use('/tweet-details', tweetDetailsRoute);
+app.use('/profile', profileRoute);
 
 
 // Default code for root of the server

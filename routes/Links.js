@@ -5,6 +5,7 @@ const router = express.Router()
 const fs = require('fs');
 const data = JSON.parse(fs.readFileSync('./data.json'));
 
+// returns id and all external links for all tweets
 router.get("/", (req, res) => {
     const linkRegex = /https?:\/\/[^\s]+/g
 
@@ -20,6 +21,7 @@ router.get("/", (req, res) => {
         return obj;
     });
 
+    res.status(200);
     res.send(body);
 });
 
