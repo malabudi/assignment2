@@ -6,7 +6,7 @@ Mohamad Alabudi
 
 This project requires you to have node.js installed in order to run it
 
-Once you clone or download this project locally and have installed this project, in the root project directory run this command:
+Once you clone or download this project locally and have installed this project, in the root project directory run these commands in the node.js or powershell terminal:
 
 ### `npm install`
 
@@ -15,6 +15,8 @@ After installing all packages necessary for the project, run this command in ord
 ### `node index.js`
 
 After that, you will have the project running successfully and should be able to send requests to all the endpoints in the API, documented below
+
+You will know when the project is running if you see `Server is listening on port 3000` in the terminal
 
 ## All Endpoints in The API
 
