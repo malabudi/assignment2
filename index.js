@@ -2,7 +2,7 @@ const express = require('express');
 const app = express(); 
 const PORT = 3000; 
 
-// Add all routes to main app, its best to split routes into seperate files for scalability
+// Add all routes to main app, its best to split routes into seperate files for scalability and good design
 // To see the code of each route, check the routes folder
 const tweetsRoute = require('./routes/Tweets');
 const linksRoute = require('./routes/Links');
